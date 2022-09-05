@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,shrink-to-fit=no">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet" />
+    <style>
+        .section {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .section .section-head {
+            color: #000;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section .section-head:after {
+            background: #e74c3c;
+            content: "";
+            display: block;
+            width: 100px;
+            height: 2px;
+            margin: 20px auto;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        #header {
+            color: #fff;
+            background: #e74c3c;
+        }
+
+        #logo {
+            font-size: 2rem;
+            margin-top: 8px;
+        }
+
+        #menu {
+            list-style: none;
+
+        }
+
+        #menu li {
+            display: inline-block;
+
+        }
+
+        #menu li a {
+            color: #fff;
+            padding: 15px 10px;
+            display: block;
+        }
+
+        #menu li a:hover {
+            background: #c0392b;
+        }
+
+        .service-box {
+            text-align: center;
+        }
+
+        .service-box i.fa {
+            color: #c0392b;
+            font-size: 70px;
+            margin-bottom: 15px;
+
+        }
+
+        #testimonials {
+            background: url(https://images.unsplash.com/photo-1544228865-7d73678c0f28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80) no-repeat 0 0;
+            background-size: cover;
+            color: #fff;
+            padding: 50px 0;
+            position: relative;
+        }
+
+        #testimonials:before {
+            background: rgba(52, 73, 94, 0.021);
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .new-post img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .new-post h3 {
+            font-size: 1.35rem;
+        }
+
+        .new-post h3 a {
+            color: #e74c3c;
+        }
+
+        .pst-date {
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+
+        .pst-date:before {
+            content: "\f073";
+            font-family: FontAwesome;
+            padding-right: 5px;
+        }
+
+        a.readmore {
+            font-size: 14px;
+            color: #e74c3c;
+        }
+
+        a.readmore:after {
+            content: "\f101";
+            font-family: FontAwesome;
+            padding-left: 5px;
+
+        }
+
+        #footer-sidebar {
+            color: #fff;
+            background: #34495e;
+            padding: 20px 0;
+        }
+
+        .footer-widget h4:after {
+            content: "";
+            background: #fff;
+            display: block;
+            width: 50px;
+            height: 2px;
+            margin: 5px 0;
+        }
+
+        .footer-widget a {
+            color: #fff;
+        }
+
+        .Latest-News {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .Latest-News li {
+            margin-bottom: 3px;
+
+
+        }
+
+        .Latest-News li :before {
+            content: "\f101";
+            font-family: FontAwesome;
+            padding-right: 5px;
+
+        }
+        #footer{
+            color: #fff;
+            background: #2c3e50;
+            padding:10px 0;
+        }
+        #social-icon{
+            list-style: none;
+            color:#fff;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #social-icons li{
+            display: inline-block;
+            padding-left: 5px;
+        }
+        #social-icons li a{
+
+            color: #fff;
+            font-size: 23px;
+            
+        }
+        @media(max-width: 992px){
+            .new-post{
+             margin-bottom: 30px;
+            }
+        }
+        @media(max-width: 760px){
+            #logo{
+                text-align: center;
+                margin:10px 0;
+            }
+            #menu{
+                text-align: center;
+            }
+            .section {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+            .testimonial{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .service-box{
+                margin-bottom: 30px;
+            }
+            .new-post{
+                margin-bottom: 30px;
+            }
+            .footer-widget{
+                margin-bottom: 20px;
+            }
+
+            #footer{
+                text-align: center;
+
+            }
+            #social-icon{
+                margin-top: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 id="logo">DIGIPODIUM</h1>
+                </div>
+                <div class="col-md-8">
+                    <ul id="menu" class="float-md-end">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Content Us</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div id="banner">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-lg-12 p-0 m-0">
+                    <img src="https://images.unsplash.com/photo-1448697138198-9aa6d0d84bf4?ixlib=rb-1.2.
+                  1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8
+                  &auto=format&fit=crop&w=870&q=80" height="400px" width="100%" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container section">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-head"> OUR SERVICES</h2>
+            </div>
+            <div class=" col-sm-6 col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-anchor"></i>
+                    <h3>Some Heading</h3>
+                    <p>some text here
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="service-box">
+                    <i class=" fa fa-bar-chart "></i>
+                    <h3>Some Heading</h3>
+                    <p>some text here
+                    </p>
+                </div>
+            </div>
+            <div class=" col-sm-6 col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-gem" aria-hidden="true"></i>
+                    <h3>Some Heading</h3>
+                    <p>some text here
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimonials" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2 class="section-head text-white"> TESTIMONIALS</h2>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p>Lorem ipsum
+                            dolor sit amet consectetur, adipisicing elit. Aspernatur!</p>
+                         <img src="https://cdn.britannica.com/47/188747-050-1D34E743/Bill-Gates-2011.jpg?w=400&h=300&c=crop" width="100px" alt="">
+                        <div class="author">Bill Gates</div>
+                        <div class="author-company">Microsoft</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p>Lorem ipsum
+                            dolor sit amet consectetur, adipisicing elit. Aspernatur!</p>
+                         <img src="https://cdn.profoto.com/cdn/053149e/contentassets/d39349344d004f9b8963df1551f24bf4/profoto-albert-watson-steve-jobs-pinned-image-original.jpg?width=1280&quality=75&format=jpg" width="100px"
+                         height="78px" alt="">
+                        <div class="author">Steve Jobs</div>
+                        <div class="author-company">Apple</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="news" class="container section">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-head ">recent news</h2>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="new-post">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        height="200px" width="240px" alt="">
+                    <h3><a href="">news heading here </a></h3>
+                    <div class="pst-date">April 30, 2020</div>
+                    <p>Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Autem, quibusdam?</p>
+                    <a href="" class="readmore">Read More </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="new-post">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=884&q=80"
+                        height="200px" width="240px" alt="">
+                    <h3 class="readmore"><a href="">news heading here </a></h3>
+                    <div class="pst-date">April 30, 2020</div>
+                    <p>Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Autem, quibusdam?</p>
+                    <a href="" class="readmore">Read More </a>
+                </div>
+            </div>
+            <div class=" col-md-6 col-lg-3">
+                <div class="new-post">
+                    <img src="https://images.unsplash.com/photo-1560264357-8d9202250f21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        height="200px" width="240px" alt="">
+                    <h3><a href="" class="readmore">news heading here </a></h3>
+                    <div class="pst-date">April 30, 2020</div>
+                    <p>Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Autem, quibusdam?</p>
+                    <a href="" class="readmore">Read More </a>
+                </div>
+            </div>
+            <div class=" col-md-6 col-lg-3">
+                <div class=" new-post">
+                    <img src="https://images.unsplash.com/photo-1551911560-c08f7d349aff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=855&q=80"
+                        height="200px" width="240px" alt="">
+                    <h3><a href="">news heading here </a></h3>
+                    <div class="pst-date">April 30, 2020</div>
+                    <p>Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Autem, quibusdam?</p>
+                    <a href="" class="readmore">Read More</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer-sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4>IT TRANING COURSE</h4>
+                        <ul class="Latest-News">
+                            <li><a href="">Django Web Development</a></li>
+                            <li><a href="">Data Analytics</a></li>
+                            <li><a href="">Core Java Training</a></li>
+                            <li><a href="">Python Data Science</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4>DIGITAL MARKETING TRANING</h4>
+                        <ul class="Latest-News">
+                            <li><a href="">Digital Marketing Master Training Program</a></li>
+                            <li><a href="">Online Advertising Using GOOGLE ADS</a></li>
+                            <li><a href="">Search Engine Optimization (SEO)</a></li>
+                            <li><a href="">Web Analytics Using GOOGLE Analytics</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4> Company Address</h4>
+                        <address>
+                            Lower Ground Floor, Rajaram Kumar Plaza,
+                            Hazratganj, Lucknow -226001
+                        </address>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">copyright@2020 company name  </div>
+                <div class="col-md-6">
+                    <ul id="social-icons" class="float-md-end">
+                        <li> <a href="" class="fa-brands fa-facebook-square"></a></li>
+                        <li> <a href="" class="fa-brands fa-twitter-square"></a></li>
+                        <li> <a href="" class="fa-brands fa-linkedin"></a></li>
+                    </ul>
+
+
+                 </div>
+            
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

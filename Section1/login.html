@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Student Registration Form </title>
+    <style type="text/css">
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center; 
+            margin: 0;
+            justify-content: center; 
+        }
+        
+
+        h3{
+            text-align: center;
+        }
+
+        .mycard {
+            background-color:aqua; 
+            border: 2px solid gray;
+            width: 50%;
+            /* margin: 100px auto; */
+            /* syntax : x-offset y-offset blur size color*/
+            padding: 40px;
+            box-shadow: 4px 4px 3px -2px rgba(0, 0, 0, 0.137), -2px -2px 3px 2px rgba(0, 0, 0, 0.137);
+            box-sizing: border-box;
+            border-radius: 10px;
+             /* display: inline-block; */
+        }
+
+        .myinput {
+            width: 50%;
+            padding: 10px;
+            box-sizing: content-box;
+            border-radius: 5px;
+            
+             }
+        .mybtn {
+            width: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color:aqua;
+            /* color: white; */
+            font-weight: bold;
+            font-size: medium;
+        }
+        label{
+            display: inline-block;
+            margin: 0.2cm;
+            width: 140px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mycard">
+        <h3>Student Portal</h3>
+        <hr>
+        <label> First Name</label>
+        <input type="name" class="myinput" >
+        <br><br>
+        <label>Middle name</label>
+        <input type="name" class="myinput" >
+        <br><br>
+        <label>Last name</label>
+        <input type="name" class="myinput" >
+        <br>
+        <br>
+        <label>Date Of Birth</label>
+        <input type="date" class="myinput" >
+        <br>
+        <br>
+        <label>Email</label>
+        <input class="myinput" placeholder="enter email address" >
+        <br>
+        <br>
+        <label>Mobile Number</label>
+        <input placeholder="number"  value="+91" class="myinput">
+        <br>
+        <br>
+        <label>Gender</label>
+        <br><br>
+        <input type="radio" name="Gender" value="Male">
+        <label>Male</label>
+        <input type="radio">
+        <label>Female</label>
+        <br>
+        <br>
+        <label>Address</label>
+        <br>
+        <textarea cols="30" rows="10"></textarea>
+        <label></label>
+        <br>
+        <br>
+        <label>City</label>
+        <input type="text" class="myinput" >
+        <br><br>
+        <label>Pin Code </label>
+        <input type="text" class="myinput" >
+        <br><br>
+        <label>State</label>
+        <input type="text" class="myinput" >
+        <br><br>
+        <label> Country</label>
+        <input type="text" class="myinput" >
+        <br>
+        <br>
+        <label>Hobbies</label>
+        <input list="hob" class="myinput" >
+        <datalist id="hob">
+            <option>Drawing </option>
+            <option>Singing</option>
+            <option>Other</option>
+        </datalist>
+        <br>
+        <br>
+        <label>Qualification</label>
+        <br><br>
+        <input type="radio" >
+        <label> Secondary</label>
+        <input type="radio" >
+        <label>Intermediate</label>
+        <input type="radio">
+        <label>Graduate</label>
+        <br>
+        <br>
+        <label>Course</label>
+        <select>
+            <option>mca</option>
+            <option>B.tech</option>
+        </select>
+        <br>
+        <br>
+        <label>Department</label>
+        <input list="dept" class="myinput" >
+        <datalist id="dept">
+            <option>Computer science</option>
+            <option>Arts</option>
+            <option>Commerce</option>
+        </datalist>
+        <br>
+        <br>
+        <label>Passward</label>
+        <input type="text" class="myinput"  >
+        <br>
+        <br>
+        <button class="mybtn">submit</button>
+    </div>
+</body>
+
+</html>

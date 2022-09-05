@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background-color: rgba(0, 0, 255, 0.199); */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            justify-content: center;
+            background:linear-gradient(to right,rgba(243, 223, 226, 0.11),blue),
+            url(https://img.freepik.com/premium-photo/contact-us_36325-2135.jpg?w=2000);
+            background-size: cover;
+            /* backdrop-filter: blur(10px); */
+
+        }
+        
+        *{
+            font-family: Montserrat ;
+        }
+
+        .mycard{
+            
+            /* background-color:white ;  */
+            border: 2px solid rgba(0, 0, 255, 0.007);
+            /* width: 40%; */
+            /* margin: 100px auto; */
+            /* syntax : x-offset y-offset blur size color*/
+            padding: 20px;
+            box-shadow: 4px 4px 3px -2px rgba(170, 157, 184, 0.137), -2px -2px 3px 2px rgba(129, 76, 214, 0.137);
+            box-sizing: border-box;
+            border-radius: 5px;
+            color: aliceblue;
+
+        }
+        
+        .btn{
+            background-color: mediumpurple;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+
+        }
+        
+
+        .myinput{
+             width: 400px;
+             padding: 10px;
+             
+        }
+        textarea{
+            width: 425px;
+             padding: 10px;
+             box-sizing: border-box;
+             border-radius: 5px;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="mycard">
+        <h3>Get in touch with us</h3>
+        <hr>
+        <br>
+        
+        <label>Your good name* </label><br>
+        <input type="text" class="myinput">
+        <br><br>
+        <label>Phone number*</label><br>
+        <input type="text" class="myinput">
+        <br><br>
+        <label>Email*</label><br>
+        <input type="text" class="myinput">
+        <br><br>
+        <label>Subject*</label><br>
+        <input list="cour" class="myinput">
+        <datalist id="cour">
+            <option>IT training related enquiry</option>
+            <option>Event Management related enquiry</option>
+            <option>Digital Marketing related enquiry</option>
+            <option>I found a bug</option>
+            <option>Feedback</option>
+        </datalist>
+        <br><br>
+        <label>Whats your message*</label><br>
+        <textarea   cols="3" rows="3"></textarea><br><br>
+        <label class="btn">submit</label><br>
+        
+    </div>
+</body>
+
+</html>
